@@ -1,0 +1,20 @@
+.button {
+    border: none;
+    color: $text-white-color;
+    padding: .5rem 1.25rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: $btn-primary-color;
+}
+
+button:disabled, button[disabled] {
+    background-color: $grey-color;
+    cursor: not-allowed;
+}

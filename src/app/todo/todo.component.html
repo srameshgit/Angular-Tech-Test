@@ -1,0 +1,31 @@
+<h1>Todo List</h1>
+<div class="todoTableTop">
+    <input type="text" style="width: 25%;" [(ngModel)]="filterTodo" placeholder="Search by todo" />
+    <button type="button" class="button btn-primary" (click)="onClickAddTodo()">Add Todo</button>
+</div>
+<table class="todo-table-bordered">
+    <thead>
+      <tr>
+        <th>#Id</th>
+        <th>Todo</th>
+        <th>Description</th>
+        <th>Category</th>
+        <th>Done</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let toDo of ToDo | toDoFilter : filterTodo : 'label'">
+        <td>{{toDo.id}}</td>
+        <td>{{toDo.label}}</td>
+        <td>{{toDo.description}}</td>
+        <td>{{toDo.category}}</td>
+        <td>{{toDo.done === true || toDo.done === 'true' ? 'Yes' : 'No' }}</td>
+        <td>
+            <a href="javascript:void()" (click)="onClickEditTodo(toDo.id)">Edit</a>
+            &nbsp;<a href="javascript:void()" (click)="onClickDeleteTodo(toDo.id)">Delete</a>
+            &nbsp;<a href="javascript:void()" (click)="onClickMarkDoneTodo(toDo.id)">Mark as Done</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>

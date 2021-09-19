@@ -1,0 +1,32 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "label": "Kitchen Cleanup",
+      "description": "Clean my dirty kitchen",
+      "category": "house",
+      "done": "false"
+    },
+    {
+      "id": 2,
+      "label": "Taxes",
+      "description": "Start doing my taxes and contact my accountant jhon for advice",
+      "category": "bureaucracy",
+      "done": "false"
+    },
+    {
+      "id": "7xlv4oh",
+      "label": "Goto shop1",
+      "description": "Goto shop1",
+      "category": "house1",
+      "done": "true"
+    },
+    {
+      "id": "0lfpurh",
+      "label": "test todo done",
+      "description": "test todo",
+      "category": "house",
+      "done": true
+    }
+  ]
+}

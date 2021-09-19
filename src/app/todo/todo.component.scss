@@ -1,0 +1,28 @@
+@import '../../sass/styles.scss';
+.todo-table-bordered {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.todo-table-bordered td, .todo-table-bordered th {
+    border: 1px solid #ddd;
+    padding: .5rem;
+}
+  
+.todo-table-bordered tr:nth-child(even){background-color: $table-td-bg-color}
+
+.todo-table-bordered th {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    text-align: left;
+    background-color: $table-th-bg-color;
+    color: $text-white-color;
+}
+
+.todoTableTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 2.75rem;
+    line-height: 2.75rem;
+}

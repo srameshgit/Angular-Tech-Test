@@ -1,0 +1,31 @@
+<h1>{{this.todoId && this.todoId !== '' ? 'Edit' : 'Add'}} Todo</h1>
+<div>
+    <form [formGroup]="toDoForm" (ngSubmit)="onSubmit(this.todoId !== '' ? this.todoId : '')">
+        <fieldset>
+        <legend >{{this.todoId && this.todoId !== '' ? 'Edit' : 'Add'}} Todo</legend>    
+        <div>
+            <label for="label">Todo: </label>
+            <input id="label" type="text" formControlName="label" required>
+        </div>
+        <div>
+            <label for="description">Description: </label>
+            <input id="description" type="text" formControlName="description" required>
+        </div>
+        <div>
+            <label for="category">Category: </label>
+            <input id="category" type="text" formControlName="category">
+        </div>
+        <div *ngIf="this.todoId && this.todoId !== ''">
+            <label for="category">Done: </label>
+            <input type="radio" value="true" name="done" formControlName="done">Yes
+            <input type="radio" value="false" name="done" formControlName="done">No
+        </div><br />
+        <div>
+            <div>
+                <button type="submit" [disabled]="!toDoForm.valid" class="button btn-primary mr-2">Save</button>&nbsp;
+                <button type="button" (click)="onClickCancel()" class="button btn-primary">Cancel</button>
+            </div>
+        </div>
+        </fieldset>
+    </form>
+</div>

@@ -1,0 +1,30 @@
+@import './variables';
+@import './colors.scss';
+@import './mixins';
+@import './button';
+@import './forms';
+
+body {
+    font-family: $font-family;
+    font-size: 1rem;
+    font-style: normal;
+    color: $text-primary-color;
+}
+
+main {
+    padding: 0 1rem 1rem 1rem;
+}
+
+h1 {
+    color: $text-primary-color;
+}
+table, td {
+    color: $text-primary-color;
+}
+
+.float-right {
+    float: right;
+}
+label {
+    color: $text-primary-color;
+}

@@ -1,0 +1,11 @@
+@import './../sass/styles.scss';
+
+.title-text{
+  font-size: 20px;
+  line-height: 1.5;
+  color: $text-white-color;
+  font-weight: 600;
+  font-family: $font-family;
+  background-color: $branding-primary-color;
+  padding: 0 .5rem;
+}
