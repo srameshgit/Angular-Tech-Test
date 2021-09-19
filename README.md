@@ -2,8 +2,7 @@
 
 Quick start
 clone the repo
-Go to your developer folder Clone this project repository to your local machine, by running command git clone https://github.com/OriginMarkets/angular8TechinicalTest.git
-
+Go to your developer folder Clone this project repository to your local machine, by running command git clonehttps://github.com/srameshgit/Angular-Tech-Test.git
 change into the repo directory
 cd tech-test
 
